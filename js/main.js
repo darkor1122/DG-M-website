@@ -1,3 +1,23 @@
+
+
+    const navBar = document.querySelector('.nav__desktop-shadow')
+
+
+    function addShadow() {
+			if (window.scrollY >= 226) {
+				navBar.classList.add('shadow-bg');
+			} else {
+				navBar.classList.remove('shadow-bg');
+			}
+		}
+
+
+        window.addEventListener('scroll', addShadow);
+
+
+
+
+
 const navBtn = document.querySelector('.hamburger');
 const navMobile = document.querySelector('.nav-mobile');
 const footerYear = document.querySelector('.footer__year');

@@ -1,6 +1,4 @@
 @media (min-width: 992px) {
-
-
 	.section-title {
 		font-size: 4.4rem;
 
@@ -82,20 +80,24 @@
 			display: block;
 			position: fixed;
 			top: 0;
-			width: 50%;
+			width: 100%;
 			z-index: 1000;
 			padding-left: 10%;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+			// border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+		}
+		
+		&__desktop-shadow {
+			transition: background-color 1s;
+		}
 
-			&::before {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				background-color: rgba(0, 0, 0, 0.41);
-			}
+		.shadow-bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.41);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.295);
 		}
 
 		&__link {
@@ -131,9 +133,7 @@
 	}
 }
 
-
-@media (min-width:1200px) {
-
+@media (min-width: 1200px) {
 	.header {
 		&__text {
 			.company-name {
@@ -144,5 +144,4 @@
 			}
 		}
 	}
-	
 }
